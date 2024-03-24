@@ -17,7 +17,6 @@ function calculatePayee(basicSalary) {
 
 // Function to calculate NHIF Deductions based on basic salary
 function calculateNHIF(basicSalary) {
-    // NHIF rates based on the provided link
     if (basicSalary <= 5999) {
         return 150;
     } else if (basicSalary <= 7999) {
@@ -45,7 +44,6 @@ function calculateNHIF(basicSalary) {
 
 // Function to calculate NSSF Deductions based on basic salary
 function calculateNSSF(basicSalary) {
-    // NSSF rates based on the provided link
     if (basicSalary < 6000) {
         return 0.06 * basicSalary;
     } else if (basicSalary <= 18000) {
@@ -70,7 +68,6 @@ function calculateNetSalary(basicSalary, benefits) {
     return netSalary;
 }
 
-// Example usage
 const basicSalary = 50000;
 const benefits = 10000;
 const netSalary = calculateNetSalary(basicSalary, benefits);
